@@ -80,7 +80,7 @@ const Footer = () => {
                     </div>
                     <p className="text-zinc-700 text-xs">
                         © 2026 Daka Sports. All rights reserved. Built for Athletes.
-                    </p>
+                        Developed By Prospect Pilot           </p>
                 </div>
             </div>
         </footer>
