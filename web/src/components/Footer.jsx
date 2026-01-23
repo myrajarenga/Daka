@@ -76,7 +76,7 @@ const Footer = () => {
 
                 <div className="mt-12 flex flex-col md:flex-row justify-between items-center border-t border-zinc-900 pt-8">
                     <div className="flex items-center mb-4 md:mb-0">
-                        <img src="/assets/logo.svg" alt="Daka Logo" className="h-12 w-auto" />
+                        <img src="/assets/logo.svg" alt="Daka Logo" className="h-24 w-auto" />
                     </div>
                     <p className="text-zinc-700 text-xs">
                         © 2026 Daka Sports. All rights reserved. Built for Athletes.
