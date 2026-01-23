@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -37,8 +38,13 @@ const Hero = () => {
                     ))}
                 </p>
 
-                <a href="#join-waitlist" className="bg-daka-orange text-white px-10 py-4 rounded font-bold text-sm uppercase tracking-widest hover:bg-orange-600 transition-colors">
+                <a href="#join-waitlist" className="bg-daka-orange text-white px-10 py-4 rounded font-bold text-sm uppercase tracking-widest hover:bg-orange-600 transition-colors mb-12 inline-block">
                     Join The Waitlist
+                </a>
+
+                {/* Scroll Down Arrow */}
+                <a href="#pillars" className="animate-bounce cursor-pointer opacity-80 hover:opacity-100 transition-opacity">
+                    <ChevronDown className="w-10 h-10 text-white" />
                 </a>
             </div>
         </div>

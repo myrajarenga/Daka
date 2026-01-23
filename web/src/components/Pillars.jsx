@@ -11,7 +11,7 @@ const pillars = [
 
 const Pillars = () => {
   return (
-    <div className="bg-black py-20 px-4 sm:px-8">
+    <div id="pillars" className="bg-black py-20 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight mb-4">
           Five Pillars.<br />
