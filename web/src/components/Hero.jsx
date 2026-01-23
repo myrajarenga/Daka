@@ -27,7 +27,14 @@ const Hero = () => {
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-200 font-medium mb-10 max-w-2xl leading-relaxed tracking-wide">
-                    Physical, Mental, Rest & Recovery, Nutrition, Career
+                    {['Physical', 'Mental', 'Rest & Recovery', 'Nutrition', 'Career'].map((item, index, array) => (
+                        <React.Fragment key={index}>
+                            <span className="hover:text-daka-orange transition-colors duration-300 cursor-default">
+                                {item}
+                            </span>
+                            {index < array.length - 1 && <span>, </span>}
+                        </React.Fragment>
+                    ))}
                 </p>
 
                 <a href="#join-waitlist" className="bg-daka-orange text-white px-10 py-4 rounded font-bold text-sm uppercase tracking-widest hover:bg-orange-600 transition-colors">
