@@ -28,7 +28,7 @@ const Navbar = () => {
                         <div className="ml-10 flex items-baseline space-x-8">
                             <Link to="/membership" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Membership</Link>
                             <Link to="/how-it-works" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">How it Works</Link>
-                            <a href="#" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Why Daka</a>
+                            <Link to="/why-daka" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Why Daka</Link>
                             <a href="#" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Partnerships</a>
                             <a href="#" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Accessories</a>
                             <a href="#" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Try Daka</a>

@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Membership from './pages/Membership';
 import HowItWorks from './pages/HowItWorks';
+import WhyDaka from './pages/WhyDaka';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/membership" element={<Membership />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/why-daka" element={<WhyDaka />} />
         </Routes>
         <Footer />
       </div>
