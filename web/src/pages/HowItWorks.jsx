@@ -2,8 +2,8 @@ import React from 'react';
 
 const pillars = [
     {
-        title: 'PHYSICAL',
-        highlight: 'TRAINING',
+        title: 'Physical',
+        highlight: 'Training',
         description: 'Build power, endurance, and resilience with training programs designed by world-class coaches.',
         stat: '+15%',
         statLabel: 'average performance gains',
@@ -11,8 +11,8 @@ const pillars = [
         imageLeft: true,
     },
     {
-        title: 'MENTAL',
-        highlight: 'HEALTH',
+        title: 'Mental',
+        highlight: 'Health',
         description: 'Cognitive training and mental strategies to sharpen focus, build confidence, and perform under pressure.',
         stat: '2X',
         statLabel: 'faster decision making',
@@ -20,8 +20,8 @@ const pillars = [
         imageLeft: false,
     },
     {
-        title: 'REST &',
-        highlight: 'RECOVERY',
+        title: 'Rest &',
+        highlight: 'Recovery',
         description: 'Personalized sleep protocols and recovery routines to help your body rebuild and come back stronger.',
         stat: '+40%',
         statLabel: 'improved recovery time',
@@ -29,8 +29,8 @@ const pillars = [
         imageLeft: true,
     },
     {
-        title: 'NUTRITION',
-        highlight: 'PLANNING',
+        title: 'Nutrition',
+        highlight: 'Planning',
         description: 'Eating strategies and meal plans to fuel your body for maximum energy and optimal performance.',
         stat: '100%',
         statLabel: 'personalized meal plans',
@@ -38,8 +38,8 @@ const pillars = [
         imageLeft: false,
     },
     {
-        title: 'CAREER',
-        highlight: 'DEVELOPMENT',
+        title: 'Career',
+        highlight: 'Development',
         description: 'Build your personal brand, manage finances, and create opportunities beyond the field.',
         stat: 'MAX',
         statLabel: 'potential unlocked',
@@ -62,10 +62,10 @@ const HowItWorks = () => {
                     <div className="absolute inset-0 bg-black/60" />
                 </div>
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 pt-20">
-                    <p className="text-daka-orange uppercase tracking-widest text-sm mb-4">The Daka Approach</p>
+                    <p className="text-daka-orange tracking-widest text-sm mb-4">The DAKA Approach</p>
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6">
-                        OUR FIVE<br />
-                        <span className="text-daka-orange">PILLARS</span>
+                        Our Five<br />
+                        <span className="text-daka-orange">Pillars</span>
                     </h1>
                     <p className="text-gray-300 text-lg md:text-xl max-w-2xl font-light">
                         A unique approach to athlete development, covering every aspect of your journey from training to life after sports.
@@ -93,7 +93,7 @@ const HowItWorks = () => {
 
                         {/* Content */}
                         <div className={`${pillar.imageLeft ? 'md:order-2' : 'md:order-1'}`}>
-                            <p className="text-gray-400 uppercase tracking-widest text-xs mb-2">Pillar {String(index + 1).padStart(2, '0')}</p>
+                            <p className="text-gray-400 tracking-widest text-xs mb-2">Pillar {String(index + 1).padStart(2, '0')}</p>
                             <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
                                 {pillar.title}<br />
                                 <span className="text-daka-orange">{pillar.highlight}</span>
@@ -103,11 +103,11 @@ const HowItWorks = () => {
                             </p>
                             <div className="mb-8">
                                 <p className="text-5xl md:text-6xl font-bold text-daka-orange">{pillar.stat}</p>
-                                <p className="text-gray-500 text-sm uppercase tracking-wide">{pillar.statLabel}</p>
+                                <p className="text-gray-500 text-sm tracking-wide">{pillar.statLabel}</p>
                             </div>
                             <a
                                 href="#cta"
-                                className="inline-block bg-daka-orange text-white px-8 py-3 rounded font-bold uppercase tracking-widest hover:bg-orange-600 transition-colors"
+                                className="inline-block bg-daka-orange text-white px-8 py-3 rounded font-bold tracking-widest hover:bg-orange-600 transition-colors"
                             >
                                 Learn More
                             </a>
@@ -120,8 +120,8 @@ const HowItWorks = () => {
             <div id="cta" className="bg-black py-24 px-4 sm:px-8">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-4">
-                        EVERYTHING<br />
-                        <span className="text-daka-orange">CONNECTED</span>
+                        Everything<br />
+                        <span className="text-daka-orange">Connected</span>
                     </h2>
                     <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
                         Daka brings every pillar together in one seamless ecosystem. See how our platform works for you.
@@ -129,13 +129,13 @@ const HowItWorks = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
                             href="#join-waitlist"
-                            className="bg-daka-orange text-white px-10 py-4 rounded font-bold uppercase tracking-widest hover:bg-orange-600 transition-colors"
+                            className="bg-daka-orange text-white px-10 py-4 rounded font-bold tracking-widest hover:bg-orange-600 transition-colors"
                         >
                             Start Watching
                         </a>
                         <a
                             href="#contact"
-                            className="border border-white text-white px-10 py-4 rounded font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
+                            className="border border-white text-white px-10 py-4 rounded font-bold tracking-widest hover:bg-white hover:text-black transition-colors"
                         >
                             Contact Support
                         </a>
