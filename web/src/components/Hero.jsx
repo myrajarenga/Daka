@@ -2,20 +2,38 @@ import React from 'react';
 import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
+    const videos = [
+        "/assets/videos/Video_Editing_Devices_Only.mp4",
+        "/assets/videos/pysical.mp4",
+        "/assets/videos/mental.mp4",
+        "/assets/videos/rest and recovery.mp4",
+        "/assets/videos/nutrion.mp4",
+        "/assets/videos/career growth.mp4"
+    ];
+
+    const [currentVideoIndex, setCurrentVideoIndex] = React.useState(0);
+
+    React.useEffect(() => {
+        const timer = setTimeout(() => {
+            setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
+        }, 4000); // Switch video every 4 seconds
+
+        return () => clearTimeout(timer);
+    }, [currentVideoIndex]);
+
     return (
         <div className="relative h-screen w-full overflow-hidden bg-black">
             {/* Video Background */}
             <div className="absolute inset-0 w-full h-full">
                 <div className="absolute inset-0 bg-black/30 z-10"></div> {/* Overlay for text readability */}
-                {/* Placeholder video: Athlete on field as requested */}
                 <video
+                    key={videos[currentVideoIndex]} // Key prop forces re-render/reload on source change
                     autoPlay
                     muted
-                    loop
                     playsInline
                     className="w-full h-full object-cover"
                 >
-                    <source src="/assets/videos/Video_Editing_Devices_Only.mp4" type="video/mp4" />
+                    <source src={videos[currentVideoIndex]} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
