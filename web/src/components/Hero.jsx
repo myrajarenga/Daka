@@ -14,9 +14,12 @@ const Hero = () => {
     const [currentVideoIndex, setCurrentVideoIndex] = React.useState(0);
 
     React.useEffect(() => {
+        // First video plays for 8 seconds, others for 5 seconds
+        const duration = currentVideoIndex === 0 ? 8000 : 5000;
+
         const timer = setTimeout(() => {
             setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
-        }, 4000); // Switch video every 4 seconds
+        }, duration);
 
         return () => clearTimeout(timer);
     }, [currentVideoIndex]);
