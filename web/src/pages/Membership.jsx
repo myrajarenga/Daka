@@ -145,7 +145,7 @@ const Membership = () => {
             {/* CTA Section */}
             <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
                 <img
-                    src="C:/Users/Myra/.gemini/antigravity/brain/e70c9665-f799-47cf-8da2-c6416f034929/membership_cta_1769424996673.png"
+                    src="/assets/Images/evolve.png"
                     alt="Evolve Every Day"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
