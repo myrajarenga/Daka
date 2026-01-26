@@ -34,7 +34,7 @@ const Hero = () => {
                     autoPlay
                     muted
                     playsInline
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full object-cover transition-transform duration-700 ${currentVideoIndex === 2 ? 'scale-110 object-top' : 'scale-100'}`}
                 >
                     <source src={videos[currentVideoIndex]} type="video/mp4" />
                     Your browser does not support the video tag.
@@ -48,15 +48,12 @@ const Hero = () => {
                     Athlete Ecosystem
                 </h1>
 
-                <p className="text-lg md:text-xl text-gray-200 font-medium mb-10 max-w-2xl leading-relaxed tracking-wide">
-                    {['Physical', 'Mental', 'Rest & Recovery', 'Nutrition', 'Career'].map((item, index, array) => (
-                        <React.Fragment key={index}>
-                            <span className="hover:text-daka-orange transition-colors duration-300 cursor-default">
-                                {item}
-                            </span>
-                            {index < array.length - 1 && <span>, </span>}
-                        </React.Fragment>
-                    ))}
+                <p className="text-lg md:text-xl text-gray-200 font-medium mb-10 max-w-2xl leading-relaxed tracking-wide min-h-[3rem] flex items-center justify-center">
+                    {currentVideoIndex !== 0 && (
+                        <span className="text-daka-orange text-2xl md:text-4xl font-bold uppercase tracking-wide animate-fade-in">
+                            {['Physical', 'Mental', 'Rest & Recovery', 'Nutrition', 'Career'][currentVideoIndex - 1]}
+                        </span>
+                    )}
                 </p>
 
                 <a href="#join-waitlist" className="bg-daka-orange text-white px-10 py-4 rounded font-bold text-sm uppercase tracking-widest hover:bg-orange-600 transition-colors mb-12 inline-block">

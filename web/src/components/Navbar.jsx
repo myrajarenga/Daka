@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 
 const Navbar = () => {
@@ -17,15 +18,15 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex-shrink-0 flex items-center">
-                        <a href="/">
+                        <Link to="/">
                             <img className="h-20 w-auto md:h-28" src="/assets/logo.svg" alt="Daka Sports" />
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
-                            <a href="#" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Membership</a>
+                            <Link to="/membership" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Membership</Link>
                             <a href="#" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">How it Works</a>
                             <a href="#" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Why Daka</a>
                             <a href="#" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Partnerships</a>
