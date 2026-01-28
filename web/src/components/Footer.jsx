@@ -7,7 +7,7 @@ const Footer = () => {
     const isHomePage = location.pathname === '/';
 
     return (
-        <footer className="bg-black pt-20 pb-10 border-t border-zinc-900">
+        <footer className="relative z-10 bg-black pt-20 pb-10 border-t border-zinc-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Branding & CTA - Only show on Home page */}

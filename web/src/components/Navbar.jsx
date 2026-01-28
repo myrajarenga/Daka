@@ -46,10 +46,10 @@ const Navbar = () => {
                                 Accessories
                                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                             </a>
-                            <a href="#" className="relative text-sm font-semibold text-white uppercase tracking-wide group hover:text-daka-orange transition-colors">
+                            <Link to="/try-daka" className="relative text-sm font-semibold text-white uppercase tracking-wide group hover:text-daka-orange transition-colors">
                                 Try Daka
                                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
