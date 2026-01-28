@@ -57,7 +57,7 @@ const partnerLogos = [
 // Hero videos - partnership page specific
 const heroVideos = [
     '/assets/videos/partneships-page -video1.mp4',
-    '/assets/videos/partneships-page -video2.mp4',
+    '/assets/videos/partneships-page -video3.mp4',
 ];
 
 const Partnerships = () => {
@@ -93,7 +93,7 @@ const Partnerships = () => {
                         <source src={heroVideos[currentVideoIndex]} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/30" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
 
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 max-w-4xl mx-auto">
@@ -151,7 +151,7 @@ const Partnerships = () => {
                                 alt={category.title}
                                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 filter grayscale group-hover:grayscale-0"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 p-6">
                                 <h3 className="text-daka-orange text-lg md:text-xl font-bold mb-2 tracking-wide">
                                     {category.title}

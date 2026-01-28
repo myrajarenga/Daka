@@ -14,7 +14,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`fixed top-0 w-full z-50 transition-colors duration-300 ${isScrolled ? 'bg-daka-dark/90 backdrop-blur-md' : 'bg-transparent'}`}>
+        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex-shrink-0 flex items-center">
@@ -26,12 +26,30 @@ const Navbar = () => {
                     {/* Desktop Menu */}
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
-                            <Link to="/membership" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Membership</Link>
-                            <Link to="/how-it-works" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">How it Works</Link>
-                            <Link to="/why-daka" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Why Daka</Link>
-                            <Link to="/partnerships" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Partnerships</Link>
-                            <a href="#" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Accessories</a>
-                            <a href="#" className="text-sm font-semibold text-white hover:text-daka-orange transition-colors uppercase tracking-wide">Try Daka</a>
+                            <Link to="/membership" className="relative text-sm font-semibold text-white uppercase tracking-wide group hover:text-daka-orange transition-colors">
+                                Memberships
+                                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                            </Link>
+                            <Link to="/how-it-works" className="relative text-sm font-semibold text-white uppercase tracking-wide group hover:text-daka-orange transition-colors">
+                                How it Works
+                                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                            </Link>
+                            <Link to="/why-daka" className="relative text-sm font-semibold text-white uppercase tracking-wide group hover:text-daka-orange transition-colors">
+                                Why Daka
+                                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                            </Link>
+                            <Link to="/partnerships" className="relative text-sm font-semibold text-white uppercase tracking-wide group hover:text-daka-orange transition-colors">
+                                Partnerships
+                                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                            </Link>
+                            <a href="#" className="relative text-sm font-semibold text-white uppercase tracking-wide group hover:text-daka-orange transition-colors">
+                                Accessories
+                                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                            <a href="#" className="relative text-sm font-semibold text-white uppercase tracking-wide group hover:text-daka-orange transition-colors">
+                                Try Daka
+                                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                            </a>
                         </div>
                     </div>
 
