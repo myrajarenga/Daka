@@ -28,7 +28,7 @@ const Hero = () => {
         <div className="relative h-screen w-full overflow-hidden bg-black">
             {/* Video Background */}
             <div className="absolute inset-0 w-full h-full">
-                <div className="absolute inset-0 bg-black/30 z-10"></div> {/* Overlay for text readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10"></div> {/* Light overlay for text readability */}
                 <video
                     key={videos[currentVideoIndex]} // Key prop forces re-render/reload on source change
                     autoPlay
