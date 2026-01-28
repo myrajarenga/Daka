@@ -15,7 +15,7 @@ const TryDaka = () => {
                             playsInline
                             className="w-full h-full object-cover"
                         >
-                            <source src="/assets/videos/pysical.mp4" type="video/mp4" />
+                            <source src="/assets/videos/Try daka-page video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
@@ -255,10 +255,10 @@ const TryDaka = () => {
                     <div className="max-w-4xl mx-auto">
                         <p className="text-gray-500 text-sm uppercase tracking-widest mb-8">Our Philosophy</p>
                         <div className="space-y-4">
-                            <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">Holistic</h2>
-                            <h2 className="text-4xl md:text-6xl font-bold text-gray-600 tracking-tight">Always Evolving</h2>
-                            <h2 className="text-4xl md:text-6xl font-bold text-gray-600 tracking-tight">Athlete-First</h2>
-                            <h2 className="text-4xl md:text-6xl font-bold text-gray-600 tracking-tight">Data-Led</h2>
+                            <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight cursor-pointer hover:text-daka-orange transition-colors duration-300">Holistic</h2>
+                            <h2 className="text-4xl md:text-6xl font-bold text-gray-600 tracking-tight cursor-pointer hover:text-daka-orange transition-colors duration-300">Always Evolving</h2>
+                            <h2 className="text-4xl md:text-6xl font-bold text-gray-600 tracking-tight cursor-pointer hover:text-daka-orange transition-colors duration-300">Athlete-First</h2>
+                            <h2 className="text-4xl md:text-6xl font-bold text-gray-600 tracking-tight cursor-pointer hover:text-daka-orange transition-colors duration-300">Data-Led</h2>
                         </div>
                     </div>
                 </div>
