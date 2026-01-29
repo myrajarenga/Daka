@@ -9,7 +9,7 @@ const principles = [
     {
         title: 'Athletic-Tech',
         description: 'Powered by cutting-edge wearables and AI-driven insights.',
-        image: '/assets/Images/whydaka_tech.png',
+        image: '/assets/Images/whydaka_tech2.png',
     },
     {
         title: 'Simplified',
@@ -121,10 +121,17 @@ const WhyDaka = () => {
                             One platform that connects every aspect of athlete performance.
                         </p>
                         <div className="relative flex justify-center">
+                            {/* Edge fade overlays matching zinc-950 background */}
+                            <div className="absolute inset-0 pointer-events-none z-10 bg-gradient-to-t from-zinc-950 via-transparent to-zinc-950" />
+                            <div className="absolute inset-0 pointer-events-none z-10 bg-gradient-to-r from-zinc-950 via-transparent to-zinc-950" />
                             <img
                                 src="/assets/Images/daka_ecosystem_hub.png"
                                 alt="DAKA Central Hub - 5 Pillars"
                                 className="max-w-full h-auto md:max-w-3xl"
+                                style={{
+                                    maskImage: 'radial-gradient(ellipse 85% 85% at 50% 50%, black 60%, transparent 100%)',
+                                    WebkitMaskImage: 'radial-gradient(ellipse 85% 85% at 50% 50%, black 60%, transparent 100%)'
+                                }}
                             />
                         </div>
                     </div>
