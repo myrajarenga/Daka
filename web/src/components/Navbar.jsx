@@ -42,10 +42,10 @@ const Navbar = () => {
                                 Partnerships
                                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                             </Link>
-                            <a href="#" className="relative text-sm font-semibold text-white uppercase tracking-wide group hover:text-daka-orange transition-colors">
+                            <Link to="/accessories" className="relative text-sm font-semibold text-white uppercase tracking-wide group hover:text-daka-orange transition-colors">
                                 Accessories
                                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-                            </a>
+                            </Link>
                             <Link to="/try-daka" className="relative text-sm font-semibold text-white uppercase tracking-wide group hover:text-daka-orange transition-colors">
                                 Try Daka
                                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
