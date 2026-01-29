@@ -7,6 +7,7 @@ import HowItWorks from './pages/HowItWorks';
 import WhyDaka from './pages/WhyDaka';
 import Partnerships from './pages/Partnerships';
 import TryDaka from './pages/TryDaka';
+import Accessories from './pages/Accessories';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/why-daka" element={<WhyDaka />} />
           <Route path="/partnerships" element={<Partnerships />} />
           <Route path="/try-daka" element={<TryDaka />} />
+          <Route path="/accessories" element={<Accessories />} />
         </Routes>
         <Footer />
       </div>
