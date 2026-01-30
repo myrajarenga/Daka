@@ -20,19 +20,19 @@ const Membership = () => {
                         </video>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                     </div>
-                    <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 max-w-5xl mx-auto">
-                        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 leading-tight text-white">
+                    <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 max-w-5xl mx-auto">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-3 sm:mb-4 leading-tight text-white">
                             A Membership Built <br />
                             For Your Journey
                         </h1>
-                        <p className="text-gray-300 text-lg md:text-xl max-w-2xl mb-8 font-light">
+                        <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-2xl mb-6 sm:mb-8 font-light px-4">
                             From recovery to peak performance, get the 360° wellness support every athlete needs to succeed.
                         </p>
-                        <div className="flex gap-4">
-                            <button className="bg-daka-orange text-white px-8 py-3 rounded font-bold uppercase tracking-widest hover:bg-orange-600 transition-colors">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-md px-4">
+                            <button className="bg-daka-orange text-white px-6 sm:px-8 py-3 rounded font-bold text-sm uppercase tracking-widest hover:bg-orange-600 active:bg-orange-700 transition-colors min-h-[44px]">
                                 Join Now
                             </button>
-                            <button className="border border-white text-white px-8 py-3 rounded font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
+                            <button className="border border-white text-white px-6 sm:px-8 py-3 rounded font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-black active:bg-white active:text-black transition-colors min-h-[44px]">
                                 Contact Support
                             </button>
                         </div>
@@ -46,11 +46,11 @@ const Membership = () => {
             {/* Scrollable Content */}
             <div className="relative z-10 bg-black">
                 {/* Choose Your Path Section */}
-                <div className="py-20 px-4 sm:px-8 max-w-7xl mx-auto">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-12 tracking-wide text-white">
+                <div className="py-12 sm:py-16 md:py-20 px-4 sm:px-8 max-w-7xl mx-auto">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 tracking-wide text-white">
                         Choose Your Path
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                         {/* Card 1 */}
                         <div className="group relative bg-daka-dark-gray border border-white/10 overflow-hidden">
                             <div className="h-80 overflow-hidden relative">
@@ -114,13 +114,13 @@ const Membership = () => {
                 </div>
 
                 {/* Ecosystem Section */}
-                <div className="py-20 bg-black overflow-hidden relative">
+                <div className="py-12 sm:py-16 md:py-20 bg-black overflow-hidden relative">
                     <div className="max-w-7xl mx-auto px-4 sm:px-8">
-                        <h2 className="text-4xl md:text-6xl font-bold mb-16 tracking-tight text-white">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-12 sm:mb-16 tracking-tight text-white">
                             A 360° Ecosystem
                         </h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 h-[500px]">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 h-auto sm:h-[400px] md:h-[500px]">
                             {[
                                 { title: 'PHYSICAL', img: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600', icon: Activity },
                                 { title: 'MENTAL', img: 'https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg?auto=compress&cs=tinysrgb&w=600', icon: Brain },
@@ -157,10 +157,10 @@ const Membership = () => {
                     />
                     <div className="absolute inset-0 bg-black/20" />
                     <div className="relative z-10 text-center">
-                        <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-8 text-white drop-shadow-2xl">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 sm:mb-8 text-white drop-shadow-2xl">
                             Evolve Every Day
                         </h2>
-                        <button className="bg-daka-orange text-white px-12 py-4 rounded font-bold uppercase tracking-widest hover:bg-orange-600 transition-colors">
+                        <button className="bg-daka-orange text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded font-bold text-sm uppercase tracking-widest hover:bg-orange-600 active:bg-orange-700 transition-colors min-h-[44px]">
                             Make Your Move
                         </button>
                     </div>

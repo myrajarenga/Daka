@@ -62,13 +62,13 @@ const HowItWorks = () => {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                     </div>
-                    <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-                        <p className="text-daka-orange tracking-widest text-sm mb-4">The DAKA Approach</p>
-                        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6">
+                    <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6">
+                        <p className="text-daka-orange tracking-widest text-xs sm:text-sm mb-3 sm:mb-4">The DAKA Approach</p>
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white mb-4 sm:mb-6">
                             Our Five<br />
                             <span className="text-daka-orange">Pillars</span>
                         </h1>
-                        <p className="text-gray-300 text-lg md:text-xl max-w-2xl font-light">
+                        <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-2xl font-light px-4">
                             A unique approach to athlete development, covering every aspect of your journey from training to life after sports.
                         </p>
                     </div>
@@ -133,7 +133,7 @@ const HowItWorks = () => {
                         <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
                             Daka brings every pillar together in one seamless ecosystem. See how our platform works for you.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                             <a
                                 href="#join-waitlist"
                                 className="bg-daka-orange text-white px-10 py-4 rounded font-bold tracking-widest hover:bg-orange-600 transition-colors"

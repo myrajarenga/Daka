@@ -52,14 +52,14 @@ const WhyDaka = () => {
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent" />
                     </div>
-                    <div className="relative z-10 flex flex-col items-start justify-center h-full px-4 sm:px-8 max-w-7xl mx-auto">
-                        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6">
+                    <div className="relative z-10 flex flex-col items-start justify-center h-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white mb-4 sm:mb-6">
                             Why <span className="text-daka-orange">Daka</span>
                         </h1>
-                        <p className="text-gray-300 text-lg md:text-xl max-w-xl font-light mb-10">
+                        <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-xl font-light mb-6 sm:mb-10">
                             The all-in-one athlete ecosystem designed to help you perform, recover, and thrive.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-md">
                             <a
                                 href="/membership"
                                 className="bg-daka-orange text-white px-10 py-4 rounded font-bold tracking-widest hover:bg-orange-600 transition-colors text-center"
@@ -85,10 +85,10 @@ const WhyDaka = () => {
                 {/* Core Principles Section */}
                 <div className="py-20 px-4 sm:px-8 bg-black">
                     <div className="max-w-7xl mx-auto">
-                        <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-12">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-8 sm:mb-12">
                             Core Principles
                         </h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                             {principles.map((principle, index) => (
                                 <div key={index} className="group relative overflow-hidden rounded-lg h-80">
                                     <img
@@ -178,7 +178,7 @@ const WhyDaka = () => {
                         <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
                             Join the movement that's redefining what it means to be an athlete.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                             <a
                                 href="/membership"
                                 className="bg-daka-orange text-white px-10 py-4 rounded font-bold tracking-widest hover:bg-orange-600 transition-colors"

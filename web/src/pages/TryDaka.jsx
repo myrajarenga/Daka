@@ -21,18 +21,18 @@ const TryDaka = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
                     </div>
 
-                    <div className="relative z-10 flex items-center h-full px-4 sm:px-8 max-w-7xl mx-auto">
+                    <div className="relative z-10 flex items-center h-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                         <div className="max-w-xl">
-                            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-4 leading-tight">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-3 sm:mb-4 leading-tight">
                                 Try Daka for<br />
                                 <span className="text-daka-orange">1 month free</span>
                             </h1>
-                            <p className="text-gray-300 text-lg md:text-xl max-w-md mb-8 font-light leading-relaxed">
+                            <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-md mb-6 sm:mb-8 font-light leading-relaxed">
                                 Experience the full Daka athlete ecosystem for 30 days. Unlock your data, optimize your performance today.
                             </p>
                             <a
                                 href="#get-started"
-                                className="inline-block bg-daka-orange text-white px-8 py-4 rounded font-semibold tracking-wide hover:bg-orange-600 transition-colors"
+                                className="inline-block bg-daka-orange text-white px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold text-sm tracking-wide hover:bg-orange-600 active:bg-orange-700 transition-colors min-h-[44px] flex items-center justify-center"
                             >
                                 Start Free Trial
                             </a>
@@ -48,19 +48,19 @@ const TryDaka = () => {
             <div className="relative z-10">
 
                 {/* A Complete Picture Section */}
-                <div className="bg-white py-20 px-4 sm:px-8">
+                <div className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-8">
                     <div className="max-w-6xl mx-auto">
-                        <div className="text-center mb-16">
-                            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 tracking-tight">
+                        <div className="text-center mb-12 sm:mb-16">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 sm:mb-4 tracking-tight">
                                 A Complete Picture of <span className="text-daka-orange">Athlete Performance</span>
                             </h2>
-                            <p className="text-gray-500 max-w-2xl mx-auto">
+                            <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">
                                 Daka consolidates all five pillars into a Unified Dashboard: Physical, Nutrition, Mental, Rest & Recovery, and Career Growth.
                             </p>
                         </div>
 
                         {/* Dashboard Preview */}
-                        <div className="bg-zinc-900 rounded-2xl p-6 md:p-10">
+                        <div className="bg-zinc-900 rounded-2xl p-4 sm:p-6 md:p-10">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 {/* Physical/Nutritional Chart */}
                                 <div className="bg-black rounded-xl p-6">
@@ -150,13 +150,13 @@ const TryDaka = () => {
                 </div>
 
                 {/* In Action Section */}
-                <div className="bg-black py-20 px-4 sm:px-8">
+                <div className="bg-black py-12 sm:py-16 md:py-20 px-4 sm:px-8">
                     <div className="max-w-6xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 tracking-tight">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 sm:mb-12 tracking-tight">
                             <span className="text-daka-orange">In</span> Action
                         </h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                             {/* Quantify Card */}
                             <div className="group relative overflow-hidden rounded-2xl h-80">
                                 <img
@@ -189,7 +189,7 @@ const TryDaka = () => {
                 </div>
 
                 {/* Everything You Need Section */}
-                <div className="bg-zinc-950 py-20 px-4 sm:px-8">
+                <div className="bg-zinc-950 py-12 sm:py-16 md:py-20 px-4 sm:px-8">
                     <div className="max-w-6xl mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                             <div>
@@ -322,7 +322,7 @@ const TryDaka = () => {
                         <p className="text-gray-300 text-lg mb-10 max-w-xl mx-auto">
                             Join the thousands of elite athletes trusting Daka.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                             <a
                                 href="#get-started"
                                 className="bg-daka-orange text-white px-10 py-4 rounded font-semibold tracking-wide hover:bg-orange-600 transition-colors"

@@ -42,27 +42,30 @@ const Hero = () => {
             </div>
 
             {/* Content */}
-            <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 max-w-5xl mx-auto mt-16">
-                <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight mb-6 leading-tight">
-                    The All-In-One <br className="hidden md:block" />
+            <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 max-w-5xl mx-auto mt-16">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-4 sm:mb-6 leading-tight">
+                    The All-In-One <br className="hidden sm:block" />
                     Athlete Ecosystem
                 </h1>
 
-                <p className="text-lg md:text-xl text-gray-200 font-medium mb-10 max-w-2xl leading-relaxed tracking-wide min-h-[3rem] flex items-center justify-center">
+                <p className="text-base sm:text-lg md:text-xl text-gray-200 font-medium mb-8 sm:mb-10 max-w-2xl leading-relaxed tracking-wide min-h-[3rem] flex items-center justify-center px-4">
                     {currentVideoIndex !== 0 && (
-                        <span className="text-daka-orange text-2xl md:text-4xl font-bold uppercase tracking-wide animate-fade-in">
+                        <span className="text-daka-orange text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase tracking-wide animate-fade-in">
                             {['Physical', 'Mental', 'Rest & Recovery', 'Nutrition', 'Career'][currentVideoIndex - 1]}
                         </span>
                     )}
                 </p>
 
-                <a href="#join-waitlist" className="bg-daka-orange text-white px-10 py-4 rounded font-bold text-sm uppercase tracking-widest hover:bg-orange-600 transition-colors mb-12 inline-block">
+                <a
+                    href="#join-waitlist"
+                    className="bg-daka-orange text-white px-8 sm:px-10 py-3 sm:py-4 rounded font-bold text-xs sm:text-sm uppercase tracking-widest hover:bg-orange-600 active:bg-orange-700 transition-colors mb-8 sm:mb-12 inline-block min-h-[44px] flex items-center justify-center"
+                >
                     Join The Waitlist
                 </a>
 
                 {/* Scroll Down Arrow */}
-                <a href="#pillars" className="animate-bounce cursor-pointer opacity-80 hover:opacity-100 transition-opacity">
-                    <ChevronDown className="w-10 h-10 text-white" />
+                <a href="#pillars" className="animate-bounce cursor-pointer opacity-80 hover:opacity-100 transition-opacity min-w-[44px] min-h-[44px] flex items-center justify-center">
+                    <ChevronDown className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </a>
             </div>
         </div>
